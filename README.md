@@ -1,7 +1,7 @@
 # tiny_mann
 Character-level Recurrent Neural Network (RNN) trained on Heinrich Mann's novel "Der Untertan" (1918) to generate new text on character-by-character basis (work in progress). 
 
-Heinrich Mann's opus magnum, "Der Untertan" is considered one of the classics of German literature. The model applied is a stateful RNN with one embedding layer and two LSTM-layers. It is trained on the complete novel (847,692 characters), divided into sequences of 200 characters, in order to predict the next character in the sequence. 
+Heinrich Mann's opus magnum, "Der Untertan" is considered one of the classics of German literature. The model applied is a stateful RNN with one embedding layer and two LSTM-layers. It is trained on the complete novel (847,692 characters), obtained from [Projekt Gutenberg](https://www.projekt-gutenberg.org/mannh/untertan/untertan.html). The novel is divided into sequences of 200 characters which are fed to the RNN in order to predict the next character in the sequence. 
 
 > Diederich Heßling war ein weiches Kind, das am liebsten träumte, sich vor allem fürchtete und viel an den Ohren litt. Ungern verließ er im Winter die warme Stube, im Sommer den engen Garten, der nach den Lumpen der Papierfabrik roch und über dessen Goldregen-
 
@@ -20,7 +20,6 @@ A couple of observations:
 1. Even without further improvements to the model architecture, the loss curve betrays the potential for the predictions to become even better. Allowing the model to train for longer, as well as making it more sophisticated, are avenues to further extend this project. 
 
 1. The fact that the model is trained on prose makes it comparatively easy to spot mistakes and get a feeling for model performance. 
-
 
 Inspired by Andrej Karpathy's [Tiny Shakespeare](https://github.com/karpathy/char-rnn) project and building on code in [this repo](https://github.com/spro/practical-pytorch/blob/master/char-rnn-generation/char-rnn-generation.ipynb). 
 
