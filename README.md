@@ -1,7 +1,7 @@
 # tiny_mann
 Character-level Recurrent Neural Network (RNN) trained on Heinrich Mann's novel "Der Untertan" (1918) to generate new text on character-by-character basis (work in progress). 
 
-Heinrich Mann's opus magnum, "Der Untertan" is considered one of the classics of German literature. The model applied is a stateful RNN with one embedding layer and two LSTM-layers. It is trained on the complete novel (847,692 characters), obtained from [Projekt Gutenberg](https://www.projekt-gutenberg.org/mannh/untertan/untertan.html). The novel is divided into sequences of 200 characters which are fed to the RNN in order to predict the next character in the sequence. 
+Heinrich Mann's opus magnum, "Der Untertan" is considered one of the classics of German literature. The model applied is a stateful RNN with one embedding layer and two LSTM-layers. It is trained on the complete novel (847,692 characters), obtained from [Projekt Gutenberg](https://www.projekt-gutenberg.org/mannh/untertan/untertan.html). The novel is divided into sequences of 200 characters which are fed to the RNN in order to predict the next character in the sequence. Here are the opening lines of Mann's novel: 
 
 > Diederich Heßling war ein weiches Kind, das am liebsten träumte, sich vor allem fürchtete und viel an den Ohren litt. Ungern verließ er im Winter die warme Stube, im Sommer den engen Garten, der nach den Lumpen der Papierfabrik roch und über dessen Goldregen-
 
