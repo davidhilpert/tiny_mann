@@ -13,11 +13,15 @@ After as few as 200 training iterations (or "epochs"), the output becomes apprec
 
 > Aufgebracht waren die Schwestern Rollen Aufbruch mit Buck als einen solten, zeigten sie sich aus, und 
 
-While still nonsensical, at this point the model already produces meaningful words and starts to combine them into coherent part-sentences ("Aufgebracht waren die Schwestern"). 
+While still nonsensical, at this point the model already produces meaningful words and starts to combine them into coherent part-sentences ("Aufgebracht waren die Schwestern"). The following figure shows for each character (rows) which letters the model considers to be most likely follow-up, where darker colors indicate higher estimated probability. At 200 epochs, these mappings become quite specific already.
+
+![Heat Map](figures/heat_map.png)
 
 A couple of observations: 
 
 1. Even without further improvements to the model architecture, the loss curve betrays the potential for the predictions to become even better. Allowing the model to train for longer, as well as making it more sophisticated, are avenues to further extend this project. 
+
+![Loss Curve](figures/loss_curve.png)
 
 1. The fact that the model is trained on prose makes it comparatively easy to spot mistakes and get a feeling for model performance.
 
