@@ -23,9 +23,9 @@ A couple of observations:
 
 ![Loss Curve](figures/loss_curve.png)
 
-1. The fact that the model is trained on prose makes it comparatively easy to spot mistakes and get a feeling for model performance.
+2. The fact that the model is trained on prose makes it comparatively easy to spot mistakes and get a feeling for model performance.
 
-1. Overall the model is trained on a relatively small dataset (800k characters). By extending the data for training, the model is likely to improve performance. 
+3. Overall the model is trained on a relatively small dataset (800k characters). By extending the data for training, the model is likely to improve performance. 
 
 Inspired by Andrej Karpathy's [Tiny Shakespeare](https://github.com/karpathy/char-rnn) project and building on code in [this repo](https://github.com/spro/practical-pytorch/blob/master/char-rnn-generation/char-rnn-generation.ipynb). 
 
